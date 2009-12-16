@@ -4,6 +4,7 @@ has_tokens:  An ActiveRecord plugin for very simple "tokening"
 Evaluates tokens and replaces them with output that you implement.  See test/mocks for an example implementation and some comments.
 
 usage example:
+
 `
 	class Message < ActiveRecord::Base
 	  has_tokens :in => [:body], :parser => Mock::Parser.new(:tokenizer => Mock::Token)
